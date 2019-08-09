@@ -51,7 +51,7 @@ const FormikOnboarding = withFormik({
 
   handleSubmit(values, { setStatus }) {
     axios
-      .post(`http://localhost:5000/api/register`, values)
+      .post(`http://localhost:5000/api/register`, {Username: 'Forrest', Password: 'qwerty'})
       // .get('http://localhost:5000/api/restricted/users')
       .then(res => {
         setStatus(res.data);
