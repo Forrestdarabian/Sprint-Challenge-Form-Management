@@ -60,7 +60,7 @@ const FormikOnboarding = withFormik({
   }
 })(Onboarding);
 
-const form = dashboard.getByText(/Username/i);
-expect(form).toHaveTextContent(/Username/i)
+// const form = Onboarding.getByText(/Username/i);
+// expect(form).toHaveTextContent(/Username/i)
 
 export default FormikOnboarding;
